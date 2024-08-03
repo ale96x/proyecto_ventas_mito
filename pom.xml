@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.3</version>
+		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mitocode</groupId>
@@ -65,29 +65,54 @@
 			<version>2.10.1</version>
 		</dependency>
 
-		<!--Seguridad-->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+
+<!--		Seguridad-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+
+<!--		JWT Tokens-->
 <!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-security</artifactId>-->
+<!--			<groupId>io.jsonwebtoken</groupId>-->
+<!--			<artifactId>jjwt</artifactId>-->
+<!--			<version>0.12.6</version>-->
 <!--		</dependency>-->
 
+<!--&lt;!&ndash;		&lt;!&ndash;API, java.xml.bind module&ndash;&gt;&ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>jakarta.xml.bind</groupId>-->
+<!--			<artifactId>jakarta.xml.bind-api</artifactId>-->
+<!--		</dependency>-->
 
-		<!--JWT Tokens-->
+<!--		<dependency>-->
+<!--			<groupId>org.glassfish.jaxb</groupId>-->
+<!--			<artifactId>jaxb-runtime</artifactId>-->
+<!--		</dependency>-->
+
+<!--		JWT con Spring Boot 3-->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt</artifactId>
-			<version>0.9.1</version>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.5</version>
 		</dependency>
-
-<!--		&lt;!&ndash;API, java.xml.bind module&ndash;&gt;-->
 		<dependency>
-			<groupId>jakarta.xml.bind</groupId>
-			<artifactId>jakarta.xml.bind-api</artifactId>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
 		</dependency>
-
 		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-runtime</artifactId>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
 		</dependency>
 
 	</dependencies>
